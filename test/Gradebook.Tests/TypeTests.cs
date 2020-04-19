@@ -10,12 +10,9 @@ namespace Gradebook.Tests
         [Fact]
         public void GetBookDoesNotReturnSameObject()
         {
-            //arrange
             var book1 = GetBook("Book_1");
             var book2 = GetBook("Book_2");
-            //act
-
-            //assert
+            
             Assert.NotSame(book1, book2);
         }
         [Fact]
@@ -27,13 +24,28 @@ namespace Gradebook.Tests
         [Fact]
         public void ShouldPassByReference()
         {
-        
             var x = GetThree();
-            SetToFourtyTwo(ref x); // passing by reference change the original value of x
+            SetToFourtyTwo(ref x);
+            // passing by reference change the original value of x
             //Objects are always passed by reference
             // Basic Types are passed by values
             // Structs behave liek basic types, they are passed by value as well
             Assert.Equal(42, x);
+        }
+
+        [Fact]
+        public void StringsBehaveLikeValueTypes()
+        {
+            string name = "Scott";
+            var upper = MakeUpperCase(name);
+
+            Assert.Equal("Scott", name);
+            Assert.Equal("SCOTT", upper);
+        }
+
+        private String MakeUpperCase(string name)
+        {
+            return name.ToUpper();
         }
 
         private int GetThree()
