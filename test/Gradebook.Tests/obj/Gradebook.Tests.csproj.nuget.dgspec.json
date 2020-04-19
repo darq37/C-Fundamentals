@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mich Ał\\Desktop\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {}
+    "c:\\Users\\Mich Ał\\Desktop\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj": {
+    "c:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj",
+        "projectUniqueName": "c:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj",
         "projectName": "GradeBook",
-        "projectPath": "C:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj",
+        "projectPath": "c:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj",
         "packagesPath": "C:\\Users\\Mich Ał\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\obj\\",
+        "outputPath": "c:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\Mich Ał\\Desktop\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {
+    "c:\\Users\\Mich Ał\\Desktop\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mich Ał\\Desktop\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
+        "projectUniqueName": "c:\\Users\\Mich Ał\\Desktop\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
         "projectName": "Gradebook.Tests",
-        "projectPath": "C:\\Users\\Mich Ał\\Desktop\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
+        "projectPath": "c:\\Users\\Mich Ał\\Desktop\\gradebook\\test\\Gradebook.Tests\\Gradebook.Tests.csproj",
         "packagesPath": "C:\\Users\\Mich Ał\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mich Ał\\Desktop\\gradebook\\test\\Gradebook.Tests\\obj\\",
+        "outputPath": "c:\\Users\\Mich Ał\\Desktop\\gradebook\\test\\Gradebook.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -85,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj": {
-                "projectPath": "C:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj"
+              "c:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj": {
+                "projectPath": "c:\\Users\\Mich Ał\\Desktop\\gradebook\\src\\Gradebook\\GradeBook.csproj"
               }
             }
           }

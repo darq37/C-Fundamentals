@@ -8,7 +8,7 @@ namespace Gradebook.Tests
     public class BookTest
     {
         [Fact] // An XUnit attribute. Annotation like @Test in JUnit
-        public void Test1()
+        public void BookCalculatesStatistics()
         {
             //arrange
             var book = new Book("");
