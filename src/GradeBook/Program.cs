@@ -10,11 +10,14 @@ namespace GradeBook
         {
 
             Book book = new Book("My book");
+            book.GradeAdded += OnGradeAdded; 
+
 
             while (true)
             {
                 System.Console.WriteLine("Write a value to add to the book or q to quit");
                 var input = Console.ReadLine();
+                
                 if (input =="q")
                 {
                     System.Console.WriteLine("Thank you:");
@@ -43,5 +46,10 @@ namespace GradeBook
 
 
         }
+
+        static void OnGradeAdded(object sender, EventArgs e){
+                System.Console.WriteLine("A grade was added");
+        }
     }
+
 }
