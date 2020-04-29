@@ -189,6 +189,11 @@ $RECYCLE.BIN/
 # Visual Studio temp something
 .vs/
 
+/test/bin/
+/test/object/
+/src/bin/
+/src/obj/
+
 # dotnet stuff
 project.lock.json
 
