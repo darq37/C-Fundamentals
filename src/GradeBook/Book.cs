@@ -11,20 +11,27 @@ namespace GradeBook
         public Book(string name)
         {
             this.name = name;
-            grades = new List<double> { };
+            grades = new List<double>();
+        }
+
+        public void AddGrade(char letter){
+        
+            grades.Add(letter);
+            
         }
 
         public void AddGrade(double grade)
-        {
+        {   
             grades.Add(grade);
         }
 
-        internal void ShowStats()
+        public void ShowStats()
         {
             var stats = GetStatistics();
             System.Console.WriteLine($"Average grade: {stats.Average:F2}");
             System.Console.WriteLine($"Lowest grade: {stats.Low}");
             System.Console.WriteLine($"Highest grade: {stats.High:F2}");
+            System.Console.WriteLine($"Letter: {stats.Letter}");
         }
 
         public Statistics GetStatistics()
@@ -34,13 +41,32 @@ namespace GradeBook
             result.Low = double.MaxValue;
             result.High = double.MinValue;
 
-            foreach (var grade in grades)
+            foreach (double grade in grades)
             {
                 result.Low = Math.Min(grade, result.Low);
                 result.High = Math.Max(grade, result.High);
                 result.Average += grade;
             }
             result.Average /= grades.Count;
+
+            switch(result.Average){
+                case var d when d >= 90.0:
+                    result.Letter = 'A';
+                    break;
+                case var d when d >= 80.0:
+                    result.Letter = 'B';
+                    break;
+                case var d when d >= 70.0:
+                    result.Letter = 'C';
+                    break;
+                case var d when d >= 60.0:
+                    result.Letter = 'D';
+                    break;
+                default:
+                    result.Letter = 'F';
+                    break;
+                
+            }
 
             return result;
 
